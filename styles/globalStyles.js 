@@ -1,0 +1,154 @@
+import { StyleSheet } from 'react-native';
+
+export const globalStyles = StyleSheet.create({
+  // Colors
+  colors: {
+    primary: '#8B4513',
+    primaryDark: '#5D2E0A',
+    secondary: '#FF6B35',
+    background: '#F5E6D3',
+    surface: '#FFFFFF',
+    text: '#333333',
+    textSecondary: '#666666',
+    textLight: '#A0A0A0',
+    success: '#4CAF50',
+    warning: '#FF9800',
+    error: '#F44336',
+    border: '#E0E0E0',
+  },
+
+  // Typography
+  typography: {
+    h1: {
+      fontSize: 32,
+      fontWeight: 'bold',
+      color: '#8B4513',
+    },
+    h2: {
+      fontSize: 28,
+      fontWeight: 'bold',
+      color: '#8B4513',
+    },
+    h3: {
+      fontSize: 24,
+      fontWeight: 'bold',
+      color: '#333333',
+    },
+    h4: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: '#333333',
+    },
+    body: {
+      fontSize: 16,
+      color: '#333333',
+    },
+    bodySecondary: {
+      fontSize: 14,
+      color: '#666666',
+    },
+    caption: {
+      fontSize: 12,
+      color: '#A0A0A0',
+    },
+  },
+
+  // Spacing
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+  },
+
+  // Shadows
+  shadows: {
+    small: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 1 },
+      shadowOpacity: 0.05,
+      shadowRadius: 2,
+      elevation: 1,
+    },
+    medium: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.1,
+      shadowRadius: 4,
+      elevation: 3,
+    },
+    large: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.15,
+      shadowRadius: 8,
+      elevation: 8,
+    },
+  },
+
+  // Common layouts
+  container: {
+    flex: 1,
+    backgroundColor: '#F5E6D3',
+  },
+  centerContent: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  spaceBetween: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+
+  // Common components
+  card: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    padding: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  button: {
+    backgroundColor: '#8B4513',
+    borderRadius: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  buttonText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    borderRadius: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    fontSize: 16,
+    backgroundColor: '#FFFFFF',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
+    elevation: 1,
+  },
+});
+
+export default globalStyles;

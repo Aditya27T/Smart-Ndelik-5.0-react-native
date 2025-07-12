@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Deteksi Biji Kopi",
+    "slug": "snack-50881b14-141d-49bd-a54a-035dbf66254a",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F5E6D3"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.snack50881b14141d49bda54a035dbf66254a"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.snack50881b14141d49bda54a035dbf66254a"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
