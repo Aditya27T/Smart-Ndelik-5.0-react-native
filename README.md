@@ -1,11 +1,99 @@
-# Sample Snack app
+# 📱 Smart Ndelik 5.0
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+Aplikasi mobile **Smart Ndelik 5.0** adalah sebuah prototipe untuk mendeteksi kualitas biji kopi secara *real-time* menggunakan kamera ponsel. Aplikasi ini dibangun dengan **React Native** dan terhubung dengan layanan **Firebase** untuk backend.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## ✨ Fitur Utama
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+-   **Deteksi Objek:** Menggunakan kamera untuk mendeteksi biji kopi.
+-   **Integrasi Model:** Terhubung dengan backend atau layanan yang menjalankan model deteksi (seperti YOLOv5).
+-   **Komunikasi Real-time:** Menggunakan MQTT untuk menerima hasil deteksi.
+-   **Antarmuka Pengguna:** UI/UX yang simpel dan fungsional dibangun dengan komponen React Native.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+---
+
+## 🔧 Teknologi yang Digunakan
+
+-   **Frontend:** React Native
+-   **Backend Services:** Firebase (Authentication, Firestore, Storage)
+-   **Navigasi:** React Navigation
+-   **Manajemen State:** (Sebutkan jika ada, misal: Redux atau Context API)
+-   **Protokol Komunikasi:** MQTT
+
+---
+
+## 🚀 Memulai Proyek
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di lingkungan pengembangan lokal Anda.
+
+### 1. Prasyarat
+
+Pastikan Anda sudah menginstal perangkat lunak berikut:
+-   **Node.js** (versi 18 atau lebih tinggi)
+-   **Yarn** atau **NPM**
+-   **Lingkungan React Native** (ikuti panduan resmi [di sini](https://reactnative.dev/docs/environment-setup) untuk setup CLI)
+-   **Android Studio** (untuk menjalankan di Android)
+-   **Xcode** (untuk menjalankan di iOS, hanya di macOS)
+
+### 2. Instalasi
+
+1.  **Clone repository ini:**
+    ```bash
+    git clone [https://github.com/USERNAME/NAMA-REPO.git](https://github.com/USERNAME/NAMA-REPO.git)
+    cd NAMA-REPO
+    ```
+
+2.  **Install semua dependency:**
+    ```bash
+    npm install
+    # atau jika menggunakan Yarn
+    yarn install
+    ```
+
+3.  **(Khusus iOS) Install Pods:**
+    ```bash
+    cd ios && pod install
+    ```
+
+### 3. Konfigurasi Firebase
+
+Proyek ini membutuhkan kredensial Firebase untuk berfungsi.
+
+1.  Buat file `.env` di direktori utama proyek.
+2.  Salin dan tempelkan konfigurasi Firebase Anda ke dalamnya:
+
+    ```env
+    # Firebase Configuration
+    API_KEY="AIzaSyC08Dj9pxNMpijJ5UtvDzwDf35Jv95TPq4"
+    AUTH_DOMAIN="bijikopi-ec58e.firebaseapp.com"
+    PROJECT_ID="bijikopi-ec58e"
+    STORAGE_BUCKET="bijikopi-ec58e.appspot.com"
+    MESSAGING_SENDER_ID="962221383374"
+    APP_ID="1:962221383374:web:7eec88e688d1d74c95fa9f"
+    MEASUREMENT_ID="G-L4K6ZGVDKC"
+    ```
+
+    > **Penting**: Pastikan file `.env` sudah ditambahkan ke dalam `.gitignore` Anda agar tidak terunggah ke repository publik.
+
+### 4. Menjalankan Aplikasi
+
+1.  **Jalankan Metro Bundler:**
+    Buka terminal baru di direktori proyek dan jalankan:
+    ```bash
+    npx react-native start
+    ```
+
+2.  **Jalankan di Emulator/Device:**
+    Biarkan terminal Metro tetap berjalan. Buka terminal lain dan jalankan:
+
+    **Untuk Android:**
+    ```bash
+    npx react-native run-android
+    ```
+
+    **Untuk iOS:**
+    ```bash
+    npx react-native run-ios
+    ```
