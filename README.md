@@ -41,8 +41,8 @@ Pastikan Anda sudah menginstal perangkat lunak berikut:
 
 1.  **Clone repository ini:**
     ```bash
-    git clone [https://github.com/USERNAME/NAMA-REPO.git](https://github.com/USERNAME/NAMA-REPO.git)
-    cd NAMA-REPO
+    git clone [https://github.com/USERNAME/NAMA-REPO.git](https://github.com/aditya27t/Smart-Ndelik-5.0-react-native.git)
+    cd Smart-Ndelik-5.0-react-native
     ```
 
 2.  **Install semua dependency:**
